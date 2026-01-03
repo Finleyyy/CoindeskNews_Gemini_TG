@@ -11,6 +11,13 @@ TWENTYFOUR_HOUR = NOW_TIME - 86400
 
 # ========= API & ID =========
 GEMINI_API_KEY= os.getenv("AIzaSyDEEy28KlPBfNqZ2END0fQ2R0bLAsSrFQY")
+
+
+print(f"DEBUG: 抓到的 Key 長度為: {len(str(GEMINI_API_KEY))}")
+if not GEMINI_API_KEY:
+    print("DEBUG: 警告！完全抓不到 Key！")
+
+
 TELEGRAM_BOT_TOKEN= os.getenv("8586350968:AAGAFZ3j1-dZRewdYiiI3J8liDFb-zb8v4g")
 TELEGRAM_CHAT_ID= os.getenv("5515327656")
 
@@ -59,3 +66,4 @@ asyncio.run(main())
 
 
 print(YESTERDAT_NEWS) #給AI算一下Token會不會超過免費額度
+
