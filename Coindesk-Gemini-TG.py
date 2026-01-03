@@ -53,17 +53,13 @@ gemini_response = resp.text
 
 # ========= 召喚TGBOT, 傳出Gemini回應的資料 =========
 async def main():
-
-    
-    print(f"DEBUG: TG_TOKEN 長度為: {len(str(TELEGRAM_BOT_TOKEN))}")
-
-    
     bot = Bot(token=TELEGRAM_BOT_TOKEN) #BOT的TOKEN_ID
     await bot.send_message(chat_id=TELEGRAM_CHAT_ID,text=f'今日新聞:\n{gemini_response}') #CHAT_ID
 asyncio.run(main())
 
 
 print(YESTERDAT_NEWS) #給AI算一下Token會不會超過免費額度
+
 
 
 
