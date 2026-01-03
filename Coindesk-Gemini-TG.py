@@ -10,9 +10,9 @@ NOW_TIME = int(time.time())
 TWENTYFOUR_HOUR = NOW_TIME - 86400
 
 # ========= API & ID =========
-GEMINI_API_KEY= os.getenv("AIzaSyDEEy28KlPBfNqZ2END0fQ2R0bLAsSrFQY")
-TELEGRAM_BOT_TOKEN= os.getenv("8586350968:AAGAFZ3j1-dZRewdYiiI3J8liDFb-zb8v4g")
-TELEGRAM_CHAT_ID= os.getenv("5515327656")
+GEMINI_API_KEY= os.getenv("GEMINI_API_KEY")
+TELEGRAM_BOT_TOKEN= os.getenv("TELEGRAM_BOT_TOKEN")
+TELEGRAM_CHAT_ID= os.getenv("TELEGRAM_CHAT_ID")
 
 # ========= 網站, 格式過濾=========
 COINDESK_URL = requests.get("https://data-api.coindesk.com/news/v1/article/list?lang=EN&limit=100&source_ids=coindesk")
@@ -59,6 +59,7 @@ asyncio.run(main())
 
 
 print(YESTERDAT_NEWS) #給AI算一下Token會不會超過免費額度
+
 
 
 
