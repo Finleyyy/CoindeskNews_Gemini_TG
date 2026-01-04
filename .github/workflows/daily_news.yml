@@ -2,7 +2,7 @@ name: Daily Crypto News
 
 on:
   schedule:
-    # UTC 時間 00:13 等於 台北時間 (UTC+8) 08:13
+    # UTC 時間 08:03 等於 台北時間 (UTC+8) 08:03
     - cron: '3 0 * * *'
   workflow_dispatch: # 允許手動點擊執行（測試用）
 
