@@ -44,7 +44,7 @@ client = genai.Client(api_key=GEMINI_API_KEY)
 contect = "Hello"             #========= 要下好Prompt(很重要!!!)，寫好Prompt之後要給AI算一下Token會不會超過免費額度 =========
 
 resp = client.models.generate_content(
-    model="gemini-2.5-flash", #目前測試有回應的模型(傻眼)...
+    model="gemini-2.5-flash", #目前測試有回應的模型...
     contents=contect,
 )
 
@@ -59,6 +59,7 @@ asyncio.run(main())
 
 
 print(YESTERDAT_NEWS) #給AI算一下Token會不會超過免費額度
+
 
 
 
